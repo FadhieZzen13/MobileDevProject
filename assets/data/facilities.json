@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Surau",
+    "location": "Block A, Ground Floor",
+    "description": "Prayer room available for staff and students.",
+    "image": "",
+    "icon": "mosque"
+  },
+  {
+    "name": "Pantry",
+    "location": "Block B, Level 1",
+    "description": "Shared pantry with seating and water dispenser.",
+    "image": "",
+    "icon": "restaurant"
+  },
+  {
+    "name": "Parking Area",
+    "location": "Beside Block C",
+    "description": "Open parking area for staff and visitors.",
+    "image": "",
+    "icon": "local_parking"
+  },
+  {
+    "name": "Recycling Corner",
+    "location": "Block A, Ground Floor",
+    "description": "Separated bins for paper, plastic and aluminium.",
+    "image": "",
+    "icon": "recycling"
+  },
+  {
+    "name": "Computer Lab (Open Access)",
+    "location": "Block B, Ground Floor",
+    "description": "Open-access lab for general student use.",
+    "image": "",
+    "icon": "computer"
+  }
+]

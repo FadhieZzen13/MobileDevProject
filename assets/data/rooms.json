@@ -1,0 +1,82 @@
+[
+  {
+    "code": "Software Engineering Lab 1",
+    "type": "Lab",
+    "block": "A",
+    "floor": "Ground",
+    "image": "se_lab1.png",
+    "description": "Software Engineering teaching lab with 40 workstations."
+  },
+  {
+    "code": "Programming Lab 1",
+    "type": "Lab",
+    "block": "A",
+    "floor": "Ground",
+    "image": "",
+    "description": "General programming lab used for introductory courses."
+  },
+  {
+    "code": "Lecturer Room A-101",
+    "type": "Lecturer Room",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Lecturer office on the first floor of Block A."
+  },
+  {
+    "code": "Meeting Room A-102",
+    "type": "Meeting Room",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Small meeting room for staff discussions."
+  },
+  {
+    "code": "Networking Lab",
+    "type": "Lab",
+    "block": "B",
+    "floor": "Ground",
+    "image": "",
+    "description": "Computer networking lab with routers and switches."
+  },
+  {
+    "code": "Multimedia Lab",
+    "type": "Lab",
+    "block": "B",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Lab equipped for multimedia and graphics coursework."
+  },
+  {
+    "code": "Discussion Room B-201",
+    "type": "Discussion Room",
+    "block": "B",
+    "floor": "Level 2",
+    "image": "",
+    "description": "Group discussion room for student projects."
+  },
+  {
+    "code": "Lecture Hall C-01",
+    "type": "Lecture Hall",
+    "block": "C",
+    "floor": "Ground",
+    "image": "",
+    "description": "Main lecture hall seating 120 students."
+  },
+  {
+    "code": "AI Research Lab",
+    "type": "Lab",
+    "block": "C",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Research lab for artificial intelligence projects."
+  },
+  {
+    "code": "Lecturer Room C-105",
+    "type": "Lecturer Room",
+    "block": "C",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Lecturer office on the first floor of Block C."
+  }
+]

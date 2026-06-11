@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Go Paperless",
+    "category": "Paperless",
+    "description": "Use this app instead of printed maps and directories to navigate the faculty.",
+    "icon": "paperless"
+  },
+  {
+    "title": "Recycle Correctly",
+    "category": "Recycling",
+    "description": "Separate paper, plastic and aluminium at the recycling corners in each block.",
+    "icon": "recycling"
+  },
+  {
+    "title": "Save Electricity",
+    "category": "Save Electricity",
+    "description": "Switch off lights, fans and projectors when leaving a room.",
+    "icon": "electricity"
+  },
+  {
+    "title": "Save Water",
+    "category": "Save Water",
+    "description": "Report leaking taps and close them tightly after use.",
+    "icon": "water"
+  },
+  {
+    "title": "Walk Between Nearby Blocks",
+    "category": "Green Transport",
+    "description": "Walk between Blocks A, B and C instead of driving short distances.",
+    "icon": "walk"
+  }
+]
