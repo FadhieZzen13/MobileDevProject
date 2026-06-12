@@ -23,13 +23,13 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   // ---- EDIT THESE BEFORE SUBMISSION -----------------------------------
   static const List<String> members = [
-    'Member One',
-    'Member Two',
-    'Member Three',
+    'Fadhie Raihan Malano Zen',
+    'Zenitho Ranadhan',
+    'Anna',
   ];
-  static const String courseName = 'Mobile Application Development';
+  static const String courseName = 'SSE3401 - Mobile Application Development';
   static const String semester = 'Semester 2, 2025/2026';
-  static const String lecturer = 'Lecturer Name';
+  static const String lecturer = 'Dr. Sufri Muhammad';
   // ---------------------------------------------------------------------
 
   @override
