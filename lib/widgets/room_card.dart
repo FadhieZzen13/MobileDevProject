@@ -17,8 +17,8 @@ class RoomCard extends StatelessWidget {
         leading: CircleAvatar(
           child: Icon(_iconForType(room.type)),
         ),
-        title: Text(room.code),
-        subtitle: Text('${room.type} • Block ${room.block}, ${room.floor}'),
+        title: Text(room.name.isEmpty ? room.code : room.name),
+        subtitle: Text('${room.code} • ${room.type} • Block ${room.block}, ${room.floor}'),
         trailing: const Icon(Icons.chevron_right),
         onTap: () => Navigator.push(
           context,

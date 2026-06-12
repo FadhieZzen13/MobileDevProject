@@ -2,15 +2,19 @@
 ///
 /// Instances are created from `assets/data/rooms.json` via [Room.fromJson].
 class Room {
-  final String code; // e.g. "SE Lab 1"
-  final String type; // e.g. "Lab", "Lecturer Room", "Meeting Room"
-  final String block; // "A", "B" or "C"
-  final String floor; // e.g. "Ground", "Level 1"
-  final String image; // file name inside assets/images/ (may be empty)
+  final String code;        // room number, e.g. "A0.01"
+  final String name;        // Malay name from the directory sign
+  final String nameEn;      // English name
+  final String type;        // e.g. "Lab", "Office", "Lecture Hall"
+  final String block;       // "A", "B" or "C"
+  final String floor;       // "Ground", "Level 1", "Level 2"
+  final String image;       // file name inside assets/images/ (may be empty)
   final String description;
 
   const Room({
     required this.code,
+    required this.name,
+    required this.nameEn,
     required this.type,
     required this.block,
     required this.floor,
@@ -21,6 +25,8 @@ class Room {
   factory Room.fromJson(Map<String, dynamic> json) {
     return Room(
       code: json['code'] as String? ?? '',
+      name: json['name'] as String? ?? '',
+      nameEn: json['nameEn'] as String? ?? '',
       type: json['type'] as String? ?? '',
       block: json['block'] as String? ?? '',
       floor: json['floor'] as String? ?? '',

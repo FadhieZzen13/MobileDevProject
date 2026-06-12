@@ -1,9 +1,16 @@
 [
   {
-    "name": "Surau",
-    "location": "Block A, Ground Floor",
-    "description": "Prayer room available for staff and students.",
-    "image": "",
+    "name": "Surau Perempuan (Female Prayer Room)",
+    "location": "Block A, Level 1 (A1.29)",
+    "description": "Female prayer room available for all female staff and students on Level 1 of Block A.",
+    "image": "a129_a130_surau.jpeg",
+    "icon": "mosque"
+  },
+  {
+    "name": "Surau Lelaki (Male Prayer Room)",
+    "location": "Block A, Level 1 (A1.30)",
+    "description": "Male prayer room available for all male staff and students on Level 1 of Block A.",
+    "image": "a129_a130_surau.jpeg",
     "icon": "mosque"
   },
   {

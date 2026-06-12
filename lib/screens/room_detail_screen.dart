@@ -26,8 +26,13 @@ class RoomDetailScreen extends StatelessWidget {
             placeholderIcon: Icons.meeting_room,
           ),
           const SizedBox(height: 16),
-          Text(room.code, style: theme.textTheme.headlineSmall),
+          Text(room.name, style: theme.textTheme.headlineSmall),
+          if (room.nameEn.isNotEmpty && room.nameEn != room.name)
+            Text(room.nameEn,
+                style: theme.textTheme.titleSmall
+                    ?.copyWith(color: theme.colorScheme.outline)),
           const SizedBox(height: 16),
+          _DetailRow(label: 'Room Code', value: room.code),
           _DetailRow(label: 'Room Type', value: room.type),
           _DetailRow(label: 'Block', value: 'Block ${room.block}'),
           _DetailRow(label: 'Floor', value: room.floor),

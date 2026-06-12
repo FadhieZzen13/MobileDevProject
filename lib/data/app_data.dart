@@ -73,6 +73,8 @@ class AppData {
     final results = <Object>[];
     for (final r in rooms) {
       if (r.code.toLowerCase().contains(q) ||
+          r.name.toLowerCase().contains(q) ||
+          r.nameEn.toLowerCase().contains(q) ||
           r.type.toLowerCase().contains(q)) {
         results.add(r);
       }

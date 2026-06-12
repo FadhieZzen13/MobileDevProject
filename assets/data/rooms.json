@@ -1,82 +1,582 @@
 [
   {
-    "code": "Software Engineering Lab 1",
-    "type": "Lab",
-    "block": "A",
-    "floor": "Ground",
-    "image": "se_lab1.png",
-    "description": "Software Engineering teaching lab with 40 workstations."
-  },
-  {
-    "code": "Programming Lab 1",
+    "code": "A0.01",
+    "name": "Makmal Siswazah 2",
+    "nameEn": "Postgraduate Laboratory 2",
     "type": "Lab",
     "block": "A",
     "floor": "Ground",
     "image": "",
-    "description": "General programming lab used for introductory courses."
+    "description": "Postgraduate research laboratory for master and PhD students."
   },
   {
-    "code": "Lecturer Room A-101",
-    "type": "Lecturer Room",
+    "code": "A0.02",
+    "name": "Makmal Master (Kerja Kursus)",
+    "nameEn": "Master Laboratory (Coursework)",
+    "type": "Lab",
+    "block": "A",
+    "floor": "Ground",
+    "image": "",
+    "description": "Master's coursework laboratory."
+  },
+  {
+    "code": "A0.04 & A0.05",
+    "name": "Makmal Siswazah 1",
+    "nameEn": "Postgraduate Laboratory 1",
+    "type": "Lab",
+    "block": "A",
+    "floor": "Ground",
+    "image": "",
+    "description": "Postgraduate Laboratory 1 for research students."
+  },
+  {
+    "code": "A0.06 & A0.07",
+    "name": "Putra Future Classroom",
+    "nameEn": "Putra Future Classroom",
+    "type": "Classroom",
+    "block": "A",
+    "floor": "Ground",
+    "image": "",
+    "description": "Modern smart classroom equipped with collaborative technology."
+  },
+  {
+    "code": "A0.09 & A0.10",
+    "name": "Pejabat Ketua Pentadbiran",
+    "nameEn": "Chief Administration's Office",
+    "type": "Office",
+    "block": "A",
+    "floor": "Ground",
+    "image": "",
+    "description": "Main administrative office of FSKTM."
+  },
+  {
+    "code": "A0.09A",
+    "name": "Bilik Penolong Pegawai",
+    "nameEn": "Assistant Administrative Officer Room",
+    "type": "Office",
+    "block": "A",
+    "floor": "Ground",
+    "image": "",
+    "description": "Office of the Assistant Administrative Officer."
+  },
+  {
+    "code": "A0.10A",
+    "name": "Bilik Pegawai Tadbir",
+    "nameEn": "Administrative Officer Room",
+    "type": "Office",
+    "block": "A",
+    "floor": "Ground",
+    "image": "",
+    "description": "Administrative Officer's room."
+  },
+  {
+    "code": "A0.11",
+    "name": "Bilik Server",
+    "nameEn": "Server Room",
+    "type": "Server Room",
+    "block": "A",
+    "floor": "Ground",
+    "image": "",
+    "description": "Faculty ICT server room. Authorised personnel only."
+  },
+  {
+    "code": "A0.12",
+    "name": "Seksyen ICT",
+    "nameEn": "ICT Section",
+    "type": "Office",
+    "block": "A",
+    "floor": "Ground",
+    "image": "",
+    "description": "Faculty ICT support and helpdesk section."
+  },
+  {
+    "code": "A0.13",
+    "name": "Bilik Ketua Seksyen ICT",
+    "nameEn": "Chief ICT Section's Room",
+    "type": "Office",
+    "block": "A",
+    "floor": "Ground",
+    "image": "",
+    "description": "Office of the Head of the ICT Section."
+  },
+  {
+    "code": "A0.14 & A0.15",
+    "name": "Dewan Kuliah Utama (Dewan Abdul Azim)",
+    "nameEn": "Main Lecture Hall",
+    "type": "Lecture Hall",
+    "block": "A",
+    "floor": "Ground",
+    "image": "a014_a015_lecture_hall.jpeg",
+    "description": "The main lecture hall of FSKTM, named Dewan Abdul Azim. Large-capacity hall used for major lectures and events."
+  },
+  {
+    "code": "A1.01",
+    "name": "Pejabat Dekan",
+    "nameEn": "Dean's Office",
+    "type": "Office",
     "block": "A",
     "floor": "Level 1",
     "image": "",
-    "description": "Lecturer office on the first floor of Block A."
+    "description": "Office of the Dean of FSKTM."
   },
   {
-    "code": "Meeting Room A-102",
+    "code": "A1.02",
+    "name": "Timbalan Dekan (Penyelidikan dan Inovasi)",
+    "nameEn": "Deputy Dean (Research and Innovation)",
+    "type": "Office",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Office of the Deputy Dean for Research and Innovation."
+  },
+  {
+    "code": "A1.03",
+    "name": "Bilik Fail",
+    "nameEn": "File Room",
+    "type": "Storage",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Document file storage room."
+  },
+  {
+    "code": "A1.04",
+    "name": "Bilik Pelawat",
+    "nameEn": "Visitor's Room",
     "type": "Meeting Room",
     "block": "A",
     "floor": "Level 1",
     "image": "",
-    "description": "Small meeting room for staff discussions."
+    "description": "Waiting and reception room for visitors."
   },
   {
-    "code": "Networking Lab",
+    "code": "A1.05",
+    "name": "Timbalan Dekan (Akademik)",
+    "nameEn": "Deputy Dean (Academic)",
+    "type": "Office",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Office of the Deputy Dean for Academic Affairs."
+  },
+  {
+    "code": "A1.06",
+    "name": "Ketua Unit Pengajian Siswazah",
+    "nameEn": "Head of Graduate Studies Unit",
+    "type": "Office",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Office of the Head of the Graduate Studies Unit."
+  },
+  {
+    "code": "A1.07",
+    "name": "Bilik Rehat",
+    "nameEn": "Lounge",
+    "type": "Lounge",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Staff and student lounge area."
+  },
+  {
+    "code": "A1.08",
+    "name": "Bilik Mesyuarat A",
+    "nameEn": "Meeting Room A",
+    "type": "Meeting Room",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Meeting Room A for faculty meetings and discussions."
+  },
+  {
+    "code": "A1.09",
+    "name": "Unit Akademik / Unit Pengajian Siswazah / Unit Penyelidikan dan Inovasi / Unit Latihan Industri",
+    "nameEn": "Academic Unit / Graduate Studies / Research & Innovation / Industrial Training",
+    "type": "Office",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Open administrative area housing the Academic Unit, Graduate Studies Unit, Research & Innovation Unit, and Industrial Training & Career Unit."
+  },
+  {
+    "code": "A1.12",
+    "name": "Bilik Pegawai Tadbir",
+    "nameEn": "Administrative Officer Room",
+    "type": "Office",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Administrative Officer's office."
+  },
+  {
+    "code": "A1.13",
+    "name": "Bilik Pegawai Tadbir",
+    "nameEn": "Administrative Officer Room",
+    "type": "Office",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Administrative Officer's office."
+  },
+  {
+    "code": "A1.14",
+    "name": "Pejabat Dekan",
+    "nameEn": "Dean's Office",
+    "type": "Office",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Dean's Office (main entrance)."
+  },
+  {
+    "code": "A1.15",
+    "name": "Timbalan Dekan (Pengajian Siswazah)",
+    "nameEn": "Deputy Dean (Graduate Studies)",
+    "type": "Office",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Office of the Deputy Dean for Graduate Studies."
+  },
+  {
+    "code": "A1.16",
+    "name": "Bilik Jaminan Kualiti FSKTM",
+    "nameEn": "FSKTM Quality Assurance Room",
+    "type": "Office",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Faculty Quality Assurance office."
+  },
+  {
+    "code": "A1.17",
+    "name": "Bilik Seminar",
+    "nameEn": "Seminar Room",
+    "type": "Meeting Room",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Seminar room for presentations and small conferences."
+  },
+  {
+    "code": "A1.19",
+    "name": "Stor Alat Tulis",
+    "nameEn": "Stationery Store",
+    "type": "Storage",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Stationery and supplies store."
+  },
+  {
+    "code": "A1.24",
+    "name": "Keselamatan Maklumat",
+    "nameEn": "Information Security",
+    "type": "Office",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Information Security unit office."
+  },
+  {
+    "code": "A1.27",
+    "name": "Stor Fail",
+    "nameEn": "File Store",
+    "type": "Storage",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "",
+    "description": "File and document storage."
+  },
+  {
+    "code": "A1.29",
+    "name": "Surau Perempuan",
+    "nameEn": "Female Prayer Room",
+    "type": "Surau",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "a129_a130_surau.jpeg",
+    "description": "Female prayer room (surau wanita), available for all female staff and students."
+  },
+  {
+    "code": "A1.30",
+    "name": "Surau Lelaki",
+    "nameEn": "Male Prayer Room",
+    "type": "Surau",
+    "block": "A",
+    "floor": "Level 1",
+    "image": "a129_a130_surau.jpeg",
+    "description": "Male prayer room (surau lelaki), available for all male staff and students."
+  },
+  {
+    "code": "A2.10",
+    "name": "Pengkomputeran Rangkaian, Selari dan Teragih",
+    "nameEn": "Network, Parallel and Distributed Computing",
+    "type": "Research Lab",
+    "block": "A",
+    "floor": "Level 2",
+    "image": "",
+    "description": "Research lab focusing on network, parallel and distributed computing."
+  },
+  {
+    "code": "A2.14",
+    "name": "Bilik Kuliah 2",
+    "nameEn": "Lecture Room 2",
+    "type": "Lecture Room",
+    "block": "A",
+    "floor": "Level 2",
+    "image": "",
+    "description": "Lecture Room 2 on the second floor of Block A."
+  },
+  {
+    "code": "A2.15",
+    "name": "Pangkalan Data, Teknologi dan Aplikasi",
+    "nameEn": "Database, Technologies and Applications",
+    "type": "Research Lab",
+    "block": "A",
+    "floor": "Level 2",
+    "image": "",
+    "description": "Research lab for database technologies and applications."
+  },
+  {
+    "code": "A2.18",
+    "name": "Wayarles, Mudah Alih dan Pengkomputeran Kuantum",
+    "nameEn": "Wireless, Mobile and Quantum Computing",
+    "type": "Research Lab",
+    "block": "A",
+    "floor": "Level 2",
+    "image": "",
+    "description": "Research lab for wireless, mobile and quantum computing."
+  },
+  {
+    "code": "A2.21",
+    "name": "Bilik Kuliah 1",
+    "nameEn": "Lecture Room 1",
+    "type": "Lecture Room",
+    "block": "A",
+    "floor": "Level 2",
+    "image": "",
+    "description": "Lecture Room 1 on the second floor of Block A."
+  },
+  {
+    "code": "A2.23",
+    "name": "Pengkomputeran Pintar",
+    "nameEn": "Intelligent Computing",
+    "type": "Research Lab",
+    "block": "A",
+    "floor": "Level 2",
+    "image": "",
+    "description": "Research lab for artificial intelligence and intelligent computing."
+  },
+  {
+    "code": "A2.24",
+    "name": "Pengiraan dan Pendapatan Maklumat Digital",
+    "nameEn": "Digital Information Computation and Retrieval",
+    "type": "Research Lab",
+    "block": "A",
+    "floor": "Level 2",
+    "image": "",
+    "description": "Research lab for digital information computation and retrieval."
+  },
+  {
+    "code": "A2.25",
+    "name": "Interaksi Pengkomputeran Manusia",
+    "nameEn": "Human Computing Interaction",
+    "type": "Research Lab",
+    "block": "A",
+    "floor": "Level 2",
+    "image": "",
+    "description": "Research lab for human-computer interaction (HCI)."
+  },
+  {
+    "code": "A2.26",
+    "name": "Makmal Informatik Gunaan",
+    "nameEn": "Applied Informatics Laboratory",
+    "type": "Lab",
+    "block": "A",
+    "floor": "Level 2",
+    "image": "",
+    "description": "Applied Informatics teaching and research laboratory."
+  },
+  {
+    "code": "A2.28",
+    "name": "Grafik Komputer, Penglihatan dan Visualisasi",
+    "nameEn": "Computer Graphics, Vision and Visualization",
+    "type": "Research Lab",
+    "block": "A",
+    "floor": "Level 2",
+    "image": "",
+    "description": "Research lab for computer graphics, computer vision and visualization."
+  },
+  {
+    "code": "A2.32",
+    "name": "Bilik Kuliah 3",
+    "nameEn": "Lecture Room 3",
+    "type": "Lecture Room",
+    "block": "A",
+    "floor": "Level 2",
+    "image": "",
+    "description": "Lecture Room 3 on the second floor of Block A."
+  },
+  {
+    "code": "A2.33",
+    "name": "Kejuruteraan Perisian",
+    "nameEn": "Software Engineering",
+    "type": "Research Lab",
+    "block": "A",
+    "floor": "Level 2",
+    "image": "",
+    "description": "Software Engineering research lab."
+  },
+  {
+    "code": "B0.01 & B0.02",
+    "name": "Makmal Rangkaian 1",
+    "nameEn": "Network Laboratory 1",
+    "type": "Lab",
+    "block": "B",
+    "floor": "Ground",
+    "image": "b001_b002_network_lab1.jpeg",
+    "description": "Network Laboratory 1 for networking courses and practical sessions."
+  },
+  {
+    "code": "B0.04",
+    "name": "Makmal Rangkaian 2 (FYP)",
+    "nameEn": "Network Laboratory 2 (FYP)",
+    "type": "Lab",
+    "block": "B",
+    "floor": "Ground",
+    "image": "b004_network_lab2_fyp.jpeg",
+    "description": "Network Laboratory 2, dedicated to Final Year Project (FYP) students."
+  },
+  {
+    "code": "B0.05",
+    "name": "Makmal Pengkomputeran Prestasi Tinggi",
+    "nameEn": "High Performance Computing (HPC) Laboratory",
+    "type": "Lab",
+    "block": "B",
+    "floor": "Ground",
+    "image": "b005_hpc_lab.jpeg",
+    "description": "High Performance Computing (HPC) Laboratory equipped with high-end computing clusters."
+  },
+  {
+    "code": "B0.07",
+    "name": "Makmal Forensik",
+    "nameEn": "Forensic Laboratory",
     "type": "Lab",
     "block": "B",
     "floor": "Ground",
     "image": "",
-    "description": "Computer networking lab with routers and switches."
+    "description": "Digital forensics laboratory for cybersecurity and forensic courses."
   },
   {
-    "code": "Multimedia Lab",
+    "code": "B0.08",
+    "name": "Makmal Terbenam dan Robotik",
+    "nameEn": "Embedded and Robotic Laboratory",
+    "type": "Lab",
+    "block": "B",
+    "floor": "Ground",
+    "image": "",
+    "description": "Embedded systems and robotics laboratory."
+  },
+  {
+    "code": "B0.10 & B0.11",
+    "name": "Makmal Kejuruteraan Perisian 1",
+    "nameEn": "Software Engineering Laboratory 1",
+    "type": "Lab",
+    "block": "B",
+    "floor": "Ground",
+    "image": "",
+    "description": "Software Engineering Laboratory 1 for SE practical classes."
+  },
+  {
+    "code": "B1.01 & B1.02",
+    "name": "Makmal Pangkalan Data",
+    "nameEn": "Database Laboratory",
     "type": "Lab",
     "block": "B",
     "floor": "Level 1",
-    "image": "",
-    "description": "Lab equipped for multimedia and graphics coursework."
+    "image": "b101_b102_database_lab.jpeg",
+    "description": "Database Laboratory for database management and SQL practical sessions."
   },
   {
-    "code": "Discussion Room B-201",
-    "type": "Discussion Room",
+    "code": "B1.04 & B1.05",
+    "name": "Makmal Sistem Perisian",
+    "nameEn": "Software System Laboratory",
+    "type": "Lab",
+    "block": "B",
+    "floor": "Level 1",
+    "image": "b104_b105_software_system_lab.jpeg",
+    "description": "Software System Laboratory for software development and testing."
+  },
+  {
+    "code": "B1.07 & B1.08",
+    "name": "Makmal Kejuruteraan Perisian 2",
+    "nameEn": "Software Engineering Laboratory 2",
+    "type": "Lab",
+    "block": "B",
+    "floor": "Level 1",
+    "image": "b107_b108_se_lab2.jpeg",
+    "description": "Software Engineering Laboratory 2 for advanced SE courses and projects."
+  },
+  {
+    "code": "B1.10 & B1.11",
+    "name": "Makmal Perdana",
+    "nameEn": "Perdana Laboratory",
+    "type": "Lab",
+    "block": "B",
+    "floor": "Level 1",
+    "image": "b110_b111_perdana_lab.jpeg",
+    "description": "Perdana Laboratory — general-purpose computer lab."
+  },
+  {
+    "code": "B2.01",
+    "name": "Makmal Sistem Pengoperasian",
+    "nameEn": "Operation System Laboratory",
+    "type": "Lab",
     "block": "B",
     "floor": "Level 2",
     "image": "",
-    "description": "Group discussion room for student projects."
+    "description": "Operating Systems Laboratory for OS courses and experiments."
   },
   {
-    "code": "Lecture Hall C-01",
-    "type": "Lecture Hall",
-    "block": "C",
-    "floor": "Ground",
-    "image": "",
-    "description": "Main lecture hall seating 120 students."
-  },
-  {
-    "code": "AI Research Lab",
+    "code": "B2.02",
+    "name": "Studio Multimedia",
+    "nameEn": "Multimedia Studio",
     "type": "Lab",
-    "block": "C",
-    "floor": "Level 1",
+    "block": "B",
+    "floor": "Level 2",
     "image": "",
-    "description": "Research lab for artificial intelligence projects."
+    "description": "Multimedia studio for audio, video and digital media production."
   },
   {
-    "code": "Lecturer Room C-105",
-    "type": "Lecturer Room",
-    "block": "C",
-    "floor": "Level 1",
+    "code": "B2.04 & B2.05",
+    "name": "Makmal Al-Khawarizmi",
+    "nameEn": "Al-Khawarizmi Laboratory",
+    "type": "Lab",
+    "block": "B",
+    "floor": "Level 2",
     "image": "",
-    "description": "Lecturer office on the first floor of Block C."
+    "description": "Al-Khawarizmi Laboratory, named after the founder of algebra."
+  },
+  {
+    "code": "B2.07 & B2.09",
+    "name": "Makmal Multimedia 1",
+    "nameEn": "Multimedia Laboratory 1",
+    "type": "Lab",
+    "block": "B",
+    "floor": "Level 2",
+    "image": "",
+    "description": "Multimedia Laboratory 1 for graphics, animation and multimedia courses."
+  },
+  {
+    "code": "B2.10 & B2.12",
+    "name": "Makmal Multimedia 2",
+    "nameEn": "Multimedia Laboratory 2",
+    "type": "Lab",
+    "block": "B",
+    "floor": "Level 2",
+    "image": "",
+    "description": "Multimedia Laboratory 2 for advanced multimedia work."
   }
 ]
