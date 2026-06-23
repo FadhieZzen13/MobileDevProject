@@ -251,8 +251,8 @@
   },
   {
     "code": "A1.17",
-    "name": "Bilik Seminar",
-    "nameEn": "Seminar Room",
+    "name": "Bilik Seminar A",
+    "nameEn": "Seminar Room A",
     "type": "Meeting Room",
     "block": "A",
     "floor": "Level 1",
@@ -578,5 +578,96 @@
     "floor": "Level 2",
     "image": "",
     "description": "Multimedia Laboratory 2 for advanced multimedia work."
+  },
+  {
+    "code": "C0.01",
+    "name": "Bilik Perbincangan 1",
+    "nameEn": "Discussion Room 1",
+    "type": "Discussion Room",
+    "block": "C",
+    "floor": "Ground",
+    "image": "",
+    "description": "Discussion Room 1 for discussion and studying"
+  },
+  {
+    "code": "C0.02",
+    "name": "Bilik Perbincangan 2",
+    "nameEn": "Discussion Room 2",
+    "type": "Discussion Room",
+    "block": "C",
+    "floor": "Ground",
+    "image": "",
+    "description": "Discussion Room 2 for discussion and studying"
+  },
+  {
+    "code": "C0.03",
+    "name": "Bilik Perbincangan 3",
+    "nameEn": "Discussion Room 3",
+    "type": "Discussion Room",
+    "block": "C",
+    "floor": "Ground",
+    "image": "",
+    "description": "Discussion Room 3 for discussion and studying"
+  },
+  {
+    "code": "C0.04",
+    "name": "Bilik Perbincangan 4",
+    "nameEn": "Discussion Room 4",
+    "type": "Discussion Room",
+    "block": "C",
+    "floor": "Ground",
+    "image": "",
+    "description": "Discussion Room 4 for discussion and studying"
+  },
+  {
+    "code": "C0.05",
+    "name": "Bilik Perbincangan 5",
+    "nameEn": "Discussion Room 5",
+    "type": "Discussion Room",
+    "block": "C",
+    "floor": "Ground",
+    "image": "",
+    "description": "Discussion Room 5 for discussion and studying"
+  },
+  {
+    "code": "C0.06",
+    "name": "iSpace",
+    "nameEn": "iSpace",
+    "type": "Multipurpose Space",
+    "block": "C",
+    "floor": "Ground",
+    "image": "",
+    "description": "The Innovation Space (iSpace) was developed in 2016 as a value-added requirement for lecturers in the Computer Science and Information Technology (FCSIT) 
+    to exhibit their innovation and ICT-based research designs. In addition, iSpace is the best platform for discussion, commercialization of ideas and cooperation between faculty and partners."
+  },
+  {
+    "code": "C0.07",
+    "name": "Ruang Legar Blok C",
+    "nameEn": "Foyer Block C",
+    "type": "Multipurpose Space",
+    "block": "C",
+    "floor": "Ground",
+    "image": "",
+    "description": "The foyer for block C"
+  },
+  {
+    "code": "C0.08",
+    "name": "Bilik Mesyuarat C",
+    "nameEn": "Meeting Room C ",
+    "type": "Meeting Room",
+    "block": "C",
+    "floor": "Level 1",
+    "image": "",
+    "description": "The room foir meeting in block C"
+  },
+  {
+    "code": "C0.08",
+    "name": "Bilik Seminar C",
+    "nameEn": "Seminar Room C",
+    "type": "Meeting Room",
+    "block": "C",
+    "floor": "Level 1",
+    "image": "",
+    "description": "Seminar room for presentations and small conferences."
   }
 ]
