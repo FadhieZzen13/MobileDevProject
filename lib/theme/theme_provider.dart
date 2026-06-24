@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// Wired up in [main] with `provider`; the home screen toggles it. This is the
 /// foundation for the optional "Dark mode" bonus feature.
 class ThemeProvider extends ChangeNotifier {
-  ThemeMode _mode = ThemeMode.system;
+  ThemeMode _mode = ThemeMode.light;
 
   ThemeMode get mode => _mode;
   bool get isDark => _mode == ThemeMode.dark;

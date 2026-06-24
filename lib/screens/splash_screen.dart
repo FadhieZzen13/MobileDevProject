@@ -50,48 +50,76 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final cs = theme.colorScheme;
 
     return Scaffold(
       body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(24),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const AssetImageBox(
-                fileName: 'logo.png',
-                height: 120,
-                width: 120,
-                placeholderIcon: Icons.school,
-              ),
-              const SizedBox(height: 24),
-              Text(
-                'FSKTM Navigation\n& Green Information App',
-                textAlign: TextAlign.center,
-                style: theme.textTheme.headlineSmall
-                    ?.copyWith(fontWeight: FontWeight.bold),
-              ),
-              const SizedBox(height: 32),
-              Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(16),
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 460),
+          child: Padding(
+            padding: const EdgeInsets.all(28),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                // Rounded brand mark (falls back to a tinted box if no logo).
+                Container(
+                  width: 96,
+                  height: 96,
+                  decoration: BoxDecoration(
+                    color: cs.primaryContainer,
+                    borderRadius: BorderRadius.circular(26),
+                  ),
+                  clipBehavior: Clip.antiAlias,
+                  child: AssetImageBox(
+                    fileName: 'logo.png',
+                    width: 96,
+                    height: 96,
+                    placeholderIcon: Icons.explore,
+                    borderRadius: BorderRadius.circular(26),
+                  ),
+                ),
+                const SizedBox(height: 22),
+                Text(
+                  'FSKTM Navigation\n& Green App',
+                  textAlign: TextAlign.center,
+                  style: theme.textTheme.headlineSmall,
+                ),
+                const SizedBox(height: 28),
+                Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(18),
+                  decoration: BoxDecoration(
+                    color: cs.surface,
+                    borderRadius: BorderRadius.circular(18),
+                    border: Border.all(color: cs.outlineVariant),
+                  ),
                   child: Column(
                     children: [
                       Text('Group Members',
-                          style: theme.textTheme.titleMedium),
+                          style: theme.textTheme.titleMedium
+                              ?.copyWith(color: cs.onSurfaceVariant)),
                       const SizedBox(height: 8),
-                      ...members.map((m) => Text(m)),
-                      const Divider(height: 24),
-                      Text(courseName, textAlign: TextAlign.center),
-                      Text(semester, textAlign: TextAlign.center),
-                      Text('Lecturer: $lecturer', textAlign: TextAlign.center),
+                      ...members.map((m) => Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 2),
+                            child: Text(m, textAlign: TextAlign.center),
+                          )),
+                      Divider(height: 26, color: cs.outlineVariant),
+                      Text(courseName,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(color: cs.onSurfaceVariant)),
+                      Text(semester,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(color: cs.onSurfaceVariant)),
+                      Text('Lecturer: $lecturer',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(color: cs.onSurfaceVariant)),
                     ],
                   ),
                 ),
-              ),
-              const SizedBox(height: 32),
-              const CircularProgressIndicator(),
-            ],
+                const SizedBox(height: 30),
+                const CircularProgressIndicator(),
+              ],
+            ),
           ),
         ),
       ),

@@ -3,22 +3,51 @@
     "name": "Surau Perempuan (Female Prayer Room)",
     "location": "Block A, Level 1 (A1.29)",
     "description": "Female prayer room available for all female staff and students on Level 1 of Block A.",
-    "image": "a129_a130_surau.jpeg",
-    "icon": "mosque"
+    "image": "",
+    "icon": "mosque",
+    "block": "A",
+    "floor": "Level 1",
+    "order": 29
   },
   {
     "name": "Surau Lelaki (Male Prayer Room)",
     "location": "Block A, Level 1 (A1.30)",
     "description": "Male prayer room available for all male staff and students on Level 1 of Block A.",
-    "image": "a129_a130_surau.jpeg",
-    "icon": "mosque"
+    "image": "",
+    "icon": "mosque",
+    "block": "A",
+    "floor": "Level 1",
+    "order": 30
   },
   {
     "name": "Pantry",
     "location": "Block B, Level 1",
-    "description": "Shared pantry with seating and water dispenser.",
+    "description": "Shared pantry with seating and a water dispenser.",
     "image": "",
-    "icon": "restaurant"
+    "icon": "restaurant",
+    "block": "B",
+    "floor": "Level 1",
+    "order": 6
+  },
+  {
+    "name": "Cafeteria",
+    "location": "Between Block A and Block B, Ground Floor",
+    "description": "Faculty cafeteria on the ground floor, between Blocks A and B.",
+    "image": "",
+    "icon": "restaurant",
+    "block": "A",
+    "floor": "Ground",
+    "order": 8
+  },
+  {
+    "name": "Recycling Corner",
+    "location": "Block A, Ground Floor",
+    "description": "Separated bins for paper, plastic and aluminium.",
+    "image": "",
+    "icon": "recycling",
+    "block": "A",
+    "floor": "Ground",
+    "order": 11
   },
   {
     "name": "Parking Area",
@@ -28,17 +57,13 @@
     "icon": "local_parking"
   },
   {
-    "name": "Recycling Corner",
-    "location": "Block A, Ground Floor",
-    "description": "Separated bins for paper, plastic and aluminium.",
-    "image": "",
-    "icon": "recycling"
-  },
-  {
     "name": "Computer Lab (Open Access)",
     "location": "Block B, Ground Floor",
-    "description": "Open-access lab for general student use.",
+    "description": "Open-access computer lab for general student use.",
     "image": "",
-    "icon": "computer"
+    "icon": "computer",
+    "block": "B",
+    "floor": "Ground",
+    "order": 6
   }
 ]

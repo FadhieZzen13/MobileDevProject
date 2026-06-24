@@ -46,6 +46,14 @@ class AppData {
   /// The three blocks covered by the app, in order.
   List<String> get blocks => const ['A', 'B', 'C'];
 
+  /// Look up a room by its exact code, or null if not found.
+  Room? roomByCode(String code) {
+    for (final r in rooms) {
+      if (r.code == code) return r;
+    }
+    return null;
+  }
+
   /// Distinct floors that have at least one room in [block], preserving the
   /// order in which they first appear in the data.
   List<String> floorsForBlock(String block) {

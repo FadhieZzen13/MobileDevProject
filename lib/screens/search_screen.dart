@@ -7,8 +7,8 @@ import 'room_detail_screen.dart';
 
 /// Search function (Functional Requirement #7).
 ///
-/// Lets the user search room names, lab names and facility names. Results
-/// update live as the query changes. Tapping a room result opens its detail.
+/// Searches room codes, Malay/English names and facility names; results update
+/// live. Tapping a room result opens its detail.
 class SearchScreen extends StatefulWidget {
   static const route = '/search';
 
@@ -34,72 +34,192 @@ class _SearchScreenState extends State<SearchScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final cs = Theme.of(context).colorScheme;
+
     return Scaffold(
-      appBar: AppBar(title: const Text('Search')),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(16),
-            child: TextField(
-              controller: _controller,
-              autofocus: true,
-              onChanged: _onChanged,
-              decoration: InputDecoration(
-                hintText: 'Search rooms, labs or facilities…',
-                prefixIcon: const Icon(Icons.search),
-                suffixIcon: _controller.text.isEmpty
-                    ? null
-                    : IconButton(
-                        icon: const Icon(Icons.clear),
-                        onPressed: () {
-                          _controller.clear();
-                          _onChanged('');
-                        },
+      body: SafeArea(
+        child: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 640),
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(18, 12, 18, 12),
+                  child: Row(
+                    children: [
+                      IconButton(
+                        onPressed: () => Navigator.pop(context),
+                        icon: const Icon(Icons.arrow_back),
                       ),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12),
+                      Expanded(
+                        child: TextField(
+                          controller: _controller,
+                          autofocus: true,
+                          onChanged: _onChanged,
+                          decoration: InputDecoration(
+                            hintText: 'Search rooms, labs, facilities',
+                            prefixIcon: Icon(Icons.search, color: cs.primary),
+                            suffixIcon: _controller.text.isEmpty
+                                ? null
+                                : IconButton(
+                                    icon: const Icon(Icons.clear),
+                                    onPressed: () {
+                                      _controller.clear();
+                                      _onChanged('');
+                                    },
+                                  ),
+                            filled: true,
+                            fillColor: cs.surface,
+                            contentPadding:
+                                const EdgeInsets.symmetric(vertical: 0),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(14),
+                              borderSide: BorderSide(color: cs.outlineVariant),
+                            ),
+                            enabledBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(14),
+                              borderSide: BorderSide(color: cs.outlineVariant),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
+                Expanded(child: _buildResults()),
+              ],
             ),
           ),
-          Expanded(child: _buildResults()),
-        ],
+        ),
       ),
     );
   }
 
   Widget _buildResults() {
+    final cs = Theme.of(context).colorScheme;
     if (_controller.text.isEmpty) {
-      return const Center(child: Text('Type to search.'));
+      return _Hint(icon: Icons.search, text: 'Type to search.', color: cs.outline);
     }
     if (_results.isEmpty) {
-      return const Center(child: Text('No matches found.'));
+      return _Hint(
+          icon: Icons.search_off, text: 'No matches found.', color: cs.outline);
     }
     return ListView.builder(
+      padding: const EdgeInsets.symmetric(horizontal: 18),
       itemCount: _results.length,
       itemBuilder: (context, i) {
         final item = _results[i];
         if (item is Room) {
-          return ListTile(
-            leading: const Icon(Icons.meeting_room),
-            title: Text(item.code),
-            subtitle:
-                Text('${item.type} • Block ${item.block}, ${item.floor}'),
+          return _ResultRow(
+            icon: Icons.meeting_room,
+            title: item.nameEn.isNotEmpty
+                ? item.nameEn
+                : (item.name.isEmpty ? item.code : item.name),
+            subtitle: item.name.isNotEmpty && item.name != item.nameEn
+                ? '${item.name} · ${item.code} · Block ${item.block}'
+                : '${item.code} · Block ${item.block}, ${item.floor}',
             onTap: () => Navigator.push(
               context,
-              MaterialPageRoute(
-                builder: (_) => RoomDetailScreen(room: item),
-              ),
+              MaterialPageRoute(builder: (_) => RoomDetailScreen(room: item)),
             ),
           );
         }
         final facility = item as Facility;
-        return ListTile(
-          leading: const Icon(Icons.apartment),
-          title: Text(facility.name),
-          subtitle: Text(facility.location),
+        return _ResultRow(
+          icon: Icons.apartment,
+          title: facility.name,
+          subtitle: 'Facility · ${facility.location}',
+          onTap: null,
         );
       },
+    );
+  }
+}
+
+class _ResultRow extends StatelessWidget {
+  final IconData icon;
+  final String title;
+  final String subtitle;
+  final VoidCallback? onTap;
+  const _ResultRow({
+    required this.icon,
+    required this.title,
+    required this.subtitle,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final cs = Theme.of(context).colorScheme;
+    final text = Theme.of(context).textTheme;
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8),
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(16),
+        child: Container(
+          padding: const EdgeInsets.all(12),
+          decoration: BoxDecoration(
+            color: cs.surface,
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(color: cs.outlineVariant),
+          ),
+          child: Row(
+            children: [
+              Container(
+                width: 40,
+                height: 40,
+                decoration: BoxDecoration(
+                  color: cs.primaryContainer,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child:
+                    Icon(icon, size: 20, color: cs.onPrimaryContainer),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(title,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: text.bodyLarge
+                            ?.copyWith(fontWeight: FontWeight.w600)),
+                    const SizedBox(height: 2),
+                    Text(subtitle,
+                        style: text.bodySmall
+                            ?.copyWith(color: cs.onSurfaceVariant)),
+                  ],
+                ),
+              ),
+              if (onTap != null)
+                Icon(Icons.chevron_right, color: cs.outline),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _Hint extends StatelessWidget {
+  final IconData icon;
+  final String text;
+  final Color color;
+  const _Hint({required this.icon, required this.text, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(icon, size: 40, color: color),
+          const SizedBox(height: 12),
+          Text(text, style: TextStyle(color: color)),
+        ],
+      ),
     );
   }
 }

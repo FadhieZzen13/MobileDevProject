@@ -22,6 +22,16 @@ class Room {
     required this.description,
   });
 
+  /// Position along the floor corridor, derived from the room code.
+  ///
+  /// FSKTM numbers rooms sequentially down each corridor (A0.01, A0.02 … A0.15),
+  /// so the number after the dot is a usable left-to-right ordering for
+  /// generating "walk past X" directions. Returns a large value when unknown.
+  int get order {
+    final m = RegExp(r'\.(\d+)').firstMatch(code);
+    return m != null ? int.parse(m.group(1)!) : 999;
+  }
+
   factory Room.fromJson(Map<String, dynamic> json) {
     return Room(
       code: json['code'] as String? ?? '',
