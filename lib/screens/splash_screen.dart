@@ -24,8 +24,8 @@ class _SplashScreenState extends State<SplashScreen> {
   // ---- EDIT THESE BEFORE SUBMISSION -----------------------------------
   static const List<String> members = [
     'Fadhie Raihan Malano Zen',
-    'Zenitho Ranadhan',
-    'Anna',
+    'Zenitho Ramadhan',
+    'Li Yanxi',
   ];
   static const String courseName = 'SSE3401 - Mobile Application Development';
   static const String semester = 'Semester 2, 2025/2026';
@@ -61,6 +61,13 @@ class _SplashScreenState extends State<SplashScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                // Faculty building photo (falls back to nothing if missing).
+                AssetImageBox(
+                  fileName: 'splashscreen.png',
+                  height: 140,
+                  borderRadius: BorderRadius.circular(18),
+                ),
+                const SizedBox(height: 18),
                 // Rounded brand mark (falls back to a tinted box if no logo).
                 Container(
                   width: 96,

@@ -7,10 +7,11 @@ import '../models/room.dart';
 import '../screens/room_detail_screen.dart';
 import '../screens/route_screen.dart';
 
-/// Renders a [FloorArt] as a scaled 2D floor plan that resembles the faculty
-/// directory boards. Rooms abut (separated by borders), the corridor is
-/// highlighted, and tapping a room shows its bilingual name with quick actions.
-/// An optional [highlightCode] paints one room in the brand colour.
+/// Renders a [FloorArt] as a 2D floor plan styled like the printed FSKTM
+/// directory boards: a beige board background, all rooms in the floor's accent
+/// colour (green for ground, orange for level 1, blue for level 2), brown
+/// service rooms, red toilets and white staircases with step lines. Tapping a
+/// room opens a bilingual bottom sheet with quick actions.
 class FloorMapView extends StatelessWidget {
   final String block;
   final String floor;
@@ -23,16 +24,18 @@ class FloorMapView extends StatelessWidget {
     this.highlightCode,
   });
 
-  // Board-like colour per floor level.
+  // Board colour per floor level — matches the physical directory boards.
   Color _floorColor() {
-    if (floor.toLowerCase().contains('ground')) return const Color(0xFF1B9E84);
-    if (floor.contains('2')) return const Color(0xFF2F7FCB);
-    return const Color(0xFFE2683C);
+    if (floor.toLowerCase().contains('ground')) return const Color(0xFF5A9F8B);
+    if (floor.contains('2')) return const Color(0xFF5D8EC4);
+    return const Color(0xFFE88A4D);
   }
+
+  // Soft block label shown at the bottom of the board.
+  String _blockLabel() => 'BLOK $block';
 
   @override
   Widget build(BuildContext context) {
-    final cs = Theme.of(context).colorScheme;
     final art = FloorPlans.of(block, floor);
     if (art == null) return const SizedBox.shrink();
     final floorColor = _floorColor();
@@ -45,9 +48,9 @@ class FloorMapView extends StatelessWidget {
         return Container(
           padding: const EdgeInsets.all(6),
           decoration: BoxDecoration(
-            color: cs.surface,
-            borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: cs.outlineVariant),
+            color: const Color(0xFFDCD0B6), // beige board
+            borderRadius: BorderRadius.circular(10),
+            border: Border.all(color: const Color(0xFFB8A988), width: 1.2),
           ),
           child: SizedBox(
             width: inner,
@@ -67,6 +70,24 @@ class FloorMapView extends StatelessWidget {
                           cell.roomCode == highlightCode,
                     ),
                   ),
+                // Block label bottom-center.
+                Positioned(
+                  left: 0,
+                  right: 0,
+                  bottom: 2,
+                  child: IgnorePointer(
+                    child: Text(
+                      _blockLabel(),
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                        fontSize: 10,
+                        fontWeight: FontWeight.w700,
+                        letterSpacing: 1.2,
+                        color: Color(0xFF6B5A3A),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
@@ -88,25 +109,18 @@ class _Cell extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final cs = Theme.of(context).colorScheme;
-
-    // Corridor is a translucent highlighted lane behind the rooms.
+    // Corridor (Ruang Legar) — solid darker beige lane behind the rooms.
     if (cell.type == CellType.corridor) {
-      return Container(
-        decoration: BoxDecoration(
-          color: const Color(0xFFF3D9A3).withValues(alpha: 0.55),
-          borderRadius: BorderRadius.circular(3),
-        ),
-      );
+      return Container(color: const Color(0xFFBFB091));
     }
 
-    // Suite is an outlined container drawn behind its rooms.
+    // Suite outline (Dean's wing on A1) — same floor colour as the rooms but
+    // outlined, drawn behind the nested rooms.
     if (cell.type == CellType.suite) {
       return Container(
         decoration: BoxDecoration(
-          color: floorColor.withValues(alpha: 0.10),
-          borderRadius: BorderRadius.circular(4),
-          border: Border.all(color: floorColor, width: 1.4),
+          color: floorColor.withValues(alpha: 0.12),
+          border: Border.all(color: floorColor, width: 1.2),
         ),
         alignment: Alignment.topCenter,
         padding: const EdgeInsets.only(top: 1),
@@ -116,8 +130,15 @@ class _Cell extends StatelessWidget {
               style: TextStyle(
                   fontSize: 8,
                   color: floorColor,
-                  fontWeight: FontWeight.w600)),
+                  fontWeight: FontWeight.w700)),
         ),
+      );
+    }
+
+    // Stairs — white box with horizontal step lines (matches the board).
+    if (cell.type == CellType.stairs) {
+      return CustomPaint(
+        painter: _StairsPainter(),
       );
     }
 
@@ -128,53 +149,48 @@ class _Cell extends StatelessWidget {
 
     switch (cell.type) {
       case CellType.room:
-        bg = highlighted ? cs.primary : floorColor.withValues(alpha: 0.90);
-        border = highlighted
-            ? cs.primary
-            : Color.alphaBlend(Colors.black.withValues(alpha: 0.30), floorColor);
+        bg = highlighted
+            ? Color.alphaBlend(Colors.white.withValues(alpha: 0.20), floorColor)
+            : floorColor;
+        border = Color.alphaBlend(
+            Colors.black.withValues(alpha: 0.35), floorColor);
         fg = Colors.white;
         break;
       case CellType.toilet:
-        bg = const Color(0xFFD8504C);
-        border = const Color(0xFF9E2F2C);
+        bg = const Color(0xFFE63946);
+        border = const Color(0xFF922A32);
         fg = Colors.white;
         icon = Icons.wc;
         break;
-      case CellType.stairs:
-        bg = cs.surfaceContainerHighest;
-        border = cs.outline;
-        fg = cs.onSurfaceVariant;
-        icon = Icons.stairs;
-        break;
       case CellType.service:
-        bg = const Color(0xFF7A5C70);
-        border = const Color(0xFF553F4E);
+        bg = const Color(0xFF7A5C4D);
+        border = const Color(0xFF4A3528);
         fg = Colors.white;
         break;
       case CellType.kafeteria:
-        bg = cs.surfaceContainerHighest;
-        border = cs.outlineVariant;
-        fg = cs.onSurfaceVariant;
+        bg = const Color(0xFFE7DDC4);
+        border = const Color(0xFFB8A988);
+        fg = const Color(0xFF6B5A3A);
         icon = Icons.restaurant;
         break;
       case CellType.door:
-        bg = Colors.transparent;
-        border = cs.outlineVariant;
-        fg = cs.onSurfaceVariant;
+        bg = Colors.white;
+        border = const Color(0xFF6B5A3A);
+        fg = const Color(0xFF3A3A3A);
         icon = Icons.login;
         break;
+      case CellType.stairs:
       case CellType.corridor:
       case CellType.suite:
         bg = Colors.transparent;
         border = Colors.transparent;
-        fg = cs.onSurface;
+        fg = Colors.black;
         break;
     }
 
     final box = Container(
       decoration: BoxDecoration(
         color: bg,
-        borderRadius: BorderRadius.circular(4),
         border: Border.all(color: border, width: 0.8),
       ),
       alignment: Alignment.center,
@@ -195,6 +211,32 @@ class _Cell extends StatelessWidget {
       child: box,
     );
   }
+}
+
+/// Paints a white stair cell with horizontal step lines, mirroring the look
+/// of the staircases on the FSKTM directory boards.
+class _StairsPainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    final fill = Paint()..color = Colors.white;
+    final stroke = Paint()
+      ..color = const Color(0xFF2A2A2A)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 0.8;
+    final rect = Offset.zero & size;
+    canvas.drawRect(rect, fill);
+    canvas.drawRect(rect, stroke);
+    // Step lines — aim for ~5–7 visible steps.
+    final stepCount = (size.height / 8).clamp(4, 9).round();
+    final step = size.height / stepCount;
+    for (int i = 1; i < stepCount; i++) {
+      final y = i * step;
+      canvas.drawLine(Offset(2, y), Offset(size.width - 2, y), stroke);
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant _StairsPainter oldDelegate) => false;
 }
 
 /// Bilingual room popup (English name first, Malay below) with quick actions.
@@ -320,7 +362,7 @@ class _CellLabel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Marker cells (stairs, toilet, kafeteria, door): icon + optional label.
+    // Marker cells (toilet, kafeteria, door): icon + optional label.
     if (code == null) {
       return FittedBox(
         fit: BoxFit.scaleDown,

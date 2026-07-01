@@ -46,7 +46,7 @@
     "type": "Staff Office",
     "block": "A",
     "floor": "Ground",
-    "image": "",
+    "image": "office_block_a.jpg",
     "description": "Central administrative hub of FSKTM, housing the Chief Administrator and key administrative functions including student affairs and general faculty operations."
   },
   {
@@ -106,7 +106,7 @@
     "type": "Lecture Hall",
     "block": "A",
     "floor": "Ground",
-    "image": "",
+    "image": "dewan_abdul_azim.jpg",
     "description": "The main lecture hall of FSKTM, named Dewan Abdul Azim. A large-capacity auditorium-style hall used for major lectures, examinations and faculty events."
   },
   {
@@ -256,7 +256,7 @@
     "type": "Meeting Room",
     "block": "A",
     "floor": "Level 1",
-    "image": "",
+    "image": "seminar_room_a.jpg",
     "description": "Dedicated seminar and conference room for academic presentations, thesis defences and small group discussions. Equipped with projector and AV facilities."
   },
   {
@@ -296,7 +296,7 @@
     "type": "Surau",
     "block": "A",
     "floor": "Level 1",
-    "image": "",
+    "image": "surau_wanita.jpg",
     "description": "Female prayer room (Surau Wanita) for female staff and students. Equipped with prayer mats, prayer facilities and ablution area."
   },
   {
@@ -306,7 +306,7 @@
     "type": "Surau",
     "block": "A",
     "floor": "Level 1",
-    "image": "",
+    "image": "surau_lelaki.jpg",
     "description": "Male prayer room (Surau Lelaki) for male staff and students. Equipped with prayer mats, prayer facilities and ablution area."
   },
   {
@@ -316,7 +316,7 @@
     "type": "Research Lab",
     "block": "A",
     "floor": "Level 2",
-    "image": "",
+    "image": "network_parallel.jpg",
     "description": "Research laboratory specialising in computer networking, parallel computing architectures and distributed systems, supporting postgraduate research and collaborative projects."
   },
   {
@@ -326,7 +326,7 @@
     "type": "Lecture Room",
     "block": "A",
     "floor": "Level 2",
-    "image": "",
+    "image": "lecture_room_2.jpg",
     "description": "Standard lecture room used for undergraduate and postgraduate classes. Equipped with projector, whiteboard and classroom technology."
   },
   {
@@ -336,7 +336,7 @@
     "type": "Research Lab",
     "block": "A",
     "floor": "Level 2",
-    "image": "",
+    "image": "database_tech_app.jpg",
     "description": "Research laboratory focused on database systems, data management technologies and their real-world applications in computing."
   },
   {
@@ -346,7 +346,7 @@
     "type": "Research Lab",
     "block": "A",
     "floor": "Level 2",
-    "image": "",
+    "image": "wireless_mobile.jpg",
     "description": "Research laboratory for wireless communications, mobile computing platforms and emerging quantum computing research."
   },
   {
@@ -356,7 +356,7 @@
     "type": "Lecture Room",
     "block": "A",
     "floor": "Level 2",
-    "image": "",
+    "image": "lecture_room_1.jpg",
     "description": "Medium-capacity lecture room used for scheduled undergraduate and postgraduate classes. Equipped with projector and classroom technology."
   },
   {
@@ -366,7 +366,7 @@
     "type": "Research Lab",
     "block": "A",
     "floor": "Level 2",
-    "image": "",
+    "image": "intelligent_computing.jpg",
     "description": "Research laboratory for artificial intelligence, machine learning and intelligent computing systems, supporting both research and advanced coursework."
   },
   {
@@ -376,7 +376,7 @@
     "type": "Research Lab",
     "block": "A",
     "floor": "Level 2",
-    "image": "",
+    "image": "digital_info_retrieval.jpg",
     "description": "Research laboratory focused on digital information retrieval, data computation and knowledge extraction from large data sources."
   },
   {
@@ -386,7 +386,7 @@
     "type": "Research Lab",
     "block": "A",
     "floor": "Level 2",
-    "image": "",
+    "image": "human_computer_interaction.jpg",
     "description": "Research laboratory for human-computer interaction (HCI), usability studies and user experience research."
   },
   {
@@ -396,7 +396,7 @@
     "type": "Lab",
     "block": "A",
     "floor": "Level 2",
-    "image": "",
+    "image": "applied_informatics_lab.jpg",
     "description": "Teaching and research laboratory for applied informatics, supporting practical sessions for computing and information systems courses."
   },
   {
@@ -406,7 +406,7 @@
     "type": "Research Lab",
     "block": "A",
     "floor": "Level 2",
-    "image": "",
+    "image": "computer_graphics_vision.jpg",
     "description": "Research laboratory specialising in computer graphics, computer vision and data visualisation, used for graphics-intensive research and postgraduate projects."
   },
   {
@@ -416,7 +416,7 @@
     "type": "Lecture Room",
     "block": "A",
     "floor": "Level 2",
-    "image": "",
+    "image": "lecture_room_3.jpg",
     "description": "Large lecture room used for scheduled undergraduate lectures and examinations. Fitted with tiered seating, projector and AV equipment."
   },
   {
@@ -426,7 +426,7 @@
     "type": "Research Lab",
     "block": "A",
     "floor": "Level 2",
-    "image": "",
+    "image": "software_engineering.jpg",
     "description": "Software Engineering research laboratory supporting research in software design, agile development methodologies and software quality assurance."
   },
   {
@@ -436,7 +436,7 @@
     "type": "Lab",
     "block": "B",
     "floor": "Ground",
-    "image": "",
+    "image": "network_lab1.jpg",
     "description": "Large networking laboratory equipped with routers, switches and networking hardware for networking courses, practical sessions and student projects."
   },
   {
@@ -446,7 +446,7 @@
     "type": "Lab",
     "block": "B",
     "floor": "Ground",
-    "image": "",
+    "image": "network_lab2_fyp.jpg",
     "description": "Dedicated networking laboratory reserved for Final Year Project (FYP) students, providing specialist equipment for advanced network research and experimentation."
   },
   {
@@ -456,7 +456,7 @@
     "type": "Lab",
     "block": "B",
     "floor": "Ground",
-    "image": "",
+    "image": "hpc_lab.jpg",
     "description": "Laboratory equipped with high-performance computing clusters for intensive computation, big data processing and HPC-related coursework."
   },
   {
@@ -466,7 +466,7 @@
     "type": "Lab",
     "block": "B",
     "floor": "Ground",
-    "image": "",
+    "image": "forensic_lab.jpg",
     "description": "Digital forensics laboratory equipped with specialist tools for cybersecurity analysis, digital evidence examination and forensic investigation training."
   },
   {
@@ -476,7 +476,7 @@
     "type": "Lab",
     "block": "B",
     "floor": "Ground",
-    "image": "",
+    "image": "embedded_robotic_lab.jpg",
     "description": "Laboratory for embedded systems design and robotics. Students work on microcontrollers, IoT devices and robotic platforms for engineering projects."
   },
   {
@@ -486,7 +486,7 @@
     "type": "Lab",
     "block": "B",
     "floor": "Ground",
-    "image": "",
+    "image": "se_lab_1.jpg",
     "description": "Software Engineering Laboratory 1 for practical sessions in software design, development and testing, with individual workstations and collaborative tools."
   },
   {
@@ -496,7 +496,7 @@
     "type": "Lab",
     "block": "B",
     "floor": "Level 1",
-    "image": "",
+    "image": "database_lab.jpg",
     "description": "Database laboratory supporting practical sessions in SQL, database design, administration and database management systems."
   },
   {
@@ -506,7 +506,7 @@
     "type": "Lab",
     "block": "B",
     "floor": "Level 1",
-    "image": "",
+    "image": "software_system_lab.jpg",
     "description": "Software systems laboratory for system programming, software architecture practicals and development environment configuration."
   },
   {
@@ -516,7 +516,7 @@
     "type": "Lab",
     "block": "B",
     "floor": "Level 1",
-    "image": "",
+    "image": "se_lab_2.jpg",
     "description": "Advanced Software Engineering Laboratory for senior-year SE courses, group software projects and agile development practicals."
   },
   {
@@ -526,7 +526,7 @@
     "type": "Lab",
     "block": "B",
     "floor": "Level 1",
-    "image": "",
+    "image": "perdana_lab.jpg",
     "description": "Perdana Laboratory — a general-purpose computing lab available for student practical sessions, coursework and self-directed study."
   },
   {
@@ -536,7 +536,7 @@
     "type": "Lab",
     "block": "B",
     "floor": "Level 2",
-    "image": "",
+    "image": "os_lab.jpg",
     "description": "Operating Systems Laboratory for hands-on OS courses covering Linux administration, process management, scheduling and kernel programming."
   },
   {
@@ -546,7 +546,7 @@
     "type": "Lab",
     "block": "B",
     "floor": "Level 2",
-    "image": "",
+    "image": "multimedia_studio.jpg",
     "description": "Multimedia production studio equipped for audio recording, video editing and digital media content creation for multimedia courses and projects."
   },
   {
@@ -556,7 +556,7 @@
     "type": "Lab",
     "block": "B",
     "floor": "Level 2",
-    "image": "",
+    "image": "al_khawarizmi_lab.jpg",
     "description": "Al-Khawarizmi Laboratory, named after the pioneering 9th-century mathematician Muhammad ibn Musa al-Khwarizmi. Used for computing, algorithm and programming courses."
   },
   {
@@ -566,7 +566,7 @@
     "type": "Lab",
     "block": "B",
     "floor": "Level 2",
-    "image": "",
+    "image": "multimedia_lab_1.jpg",
     "description": "Multimedia Laboratory 1 for graphics design, 2D/3D animation, digital imaging and multimedia production courses."
   },
   {
@@ -576,8 +576,7 @@
     "type": "Lab",
     "block": "B",
     "floor": "Level 2",
-    "image": "",
-<<<<<<< HEAD
+    "image": "multimedia_lab_2.jpg",
     "description": "Multimedia Laboratory 2 for advanced multimedia projects, video production and interactive media development."
   },
   {
@@ -587,7 +586,7 @@
     "type": "Discussion Room",
     "block": "C",
     "floor": "Ground",
-    "image": "",
+    "image": "discussion_room_1.jpg",
     "description": "Small group discussion room available for student study sessions, project meetings and collaborative work."
   },
   {
@@ -597,7 +596,7 @@
     "type": "Discussion Room",
     "block": "C",
     "floor": "Ground",
-    "image": "",
+    "image": "discussion_room_2.jpg",
     "description": "Small group discussion room available for student study sessions, project meetings and collaborative work."
   },
   {
@@ -607,7 +606,7 @@
     "type": "Discussion Room",
     "block": "C",
     "floor": "Ground",
-    "image": "",
+    "image": "discussion_room_3.jpg",
     "description": "Small group discussion room available for student study sessions, project meetings and collaborative work."
   },
   {
@@ -617,7 +616,7 @@
     "type": "Discussion Room",
     "block": "C",
     "floor": "Ground",
-    "image": "",
+    "image": "discussion_room_4.jpg",
     "description": "Small group discussion room available for student study sessions, project meetings and collaborative work."
   },
   {
@@ -627,7 +626,7 @@
     "type": "Discussion Room",
     "block": "C",
     "floor": "Ground",
-    "image": "",
+    "image": "discussion_room_5.jpg",
     "description": "Small group discussion room available for student study sessions, project meetings and collaborative work."
   },
   {
@@ -657,7 +656,7 @@
     "type": "Meeting Room",
     "block": "C",
     "floor": "Level 1",
-    "image": "",
+    "image": "meeting_room_c.jpg",
     "description": "Meeting room in Block C for faculty meetings, committee sessions and project discussions."
   },
   {
@@ -667,7 +666,7 @@
     "type": "Meeting Room",
     "block": "C",
     "floor": "Level 1",
-    "image": "",
+    "image": "seminar_room_c.jpg",
     "description": "Seminar room in Block C for academic presentations, workshops and small conferences. Equipped with projector and AV facilities."
   }
 ]
